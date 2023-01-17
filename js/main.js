@@ -275,3 +275,93 @@ console.log(subtractStrings); // NaN
 
 // Clear Console
 console.clear();
+
+// JavaScript Comparisons
+
+console.log(5 == 5);
+console.log(5 == 5.0);
+console.log(5 == '5');
+console.log(5 === '5');
+// == check for equality while allowing for type conversion
+// === check for equality but does not allow for type conversion
+
+console.log(1 == true);
+
+console.log('10' > 9);
+
+// Be careful with type conversion
+
+console.log('100' > '9') // Both values are already strings, no conversion needed - compare alphabetically
+
+
+// When JavaScript compares object, it looks for REFERENCE ONLY!!
+let arr1 = [1, 2, 3, 4];
+let arr2 = [1, 2, 3, 4];
+
+console.log(arr1 == arr2);
+console.log(arr1 === arr2);
+
+let animals = ['penguin', 'wolf', 'kangaroo'];
+let newAnimals = animals;
+
+console.log(animals === newAnimals);
+
+// Greater Than (>), Greater Than or Equal (>=), Less Than (<), Less Than or Equal (<=)
+// Equal allow type conversion (==), Equal no type conversion (===), 
+// Not Equal yes conversion (!=), Not Eqaul no conversion (!==)
+
+console.log(5 != '5');
+console.log(5 !== '5');
+
+console.clear();
+
+// Control Flow
+
+// If Condition
+
+// Syntax: if (condition expression){ code to execute if true }
+
+let randomDigit = 34;
+
+console.log('Begin');
+if (randomDigit > 20){
+    console.log('the condition was true!');
+    console.log('Still in {}'); 
+    console.log('Hey what is going on?');
+};
+console.log('End');
+
+// If, Else If, Else
+
+let randomInt = 75;
+
+if (randomInt % 100 === 0){
+    console.log('The number is divisble by 100');
+} else if (randomInt % 10 === 0){
+    console.log('The number is divisble by 10');
+} else {
+    console.log('The number is not divisible by 100 or 10')
+}
+
+// Multiple Conditions
+// && - and
+// || - or
+
+// T && T = T
+// T && F = F
+// F && T = F
+// F && F = F
+// T || T = T
+// T || F = T
+// F || T = T
+// F || F = F
+
+let personAge = 15
+
+if (personAge > 18 && personAge < 40){
+    console.log('Young Adult')
+}
+
+if (personAge < 18 || personAge > 65){
+    console.log('You get a discount')
+}
