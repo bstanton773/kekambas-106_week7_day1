@@ -27,13 +27,19 @@ if 10 < 5:
     print('Hello')
 print('Out of the if condition')
 
-num = int(input('Enter a random integer: '))
+# num = int(input('Enter a random integer: '))
 
-if num % 3 == 0 and num % 5 == 0:
-    print('FizzBuzz')
-elif num % 3 == 0:
-    print('Fizz')
-elif num % 5 == 0:
-    print('Buzz')
-else:
-    print(num)
+# if num % 3 == 0 and num % 5 == 0:
+#     print('FizzBuzz')
+# elif num % 3 == 0:
+#     print('Fizz')
+# elif num % 5 == 0:
+#     print('Buzz')
+# else:
+#     print(num)
+
+
+colors = ['red', 'orange', 'green', 'pink', 'yellow']
+
+for i in range(len(colors)):
+    print(i, colors[i])

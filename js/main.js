@@ -365,3 +365,93 @@ if (personAge > 18 && personAge < 40){
 if (personAge < 18 || personAge > 65){
     console.log('You get a discount')
 }
+
+
+// JavaScript Loops
+// for, for...in, for...of, while, do while
+
+
+// Standard for loop
+// Syntax: for (counter; expression/condition; increment/decrement for counter){ code to execute each loop }
+
+console.log('Loop has started');
+
+for (let i = 0; i < 20; i++){
+    console.log(i);
+};
+
+console.log('Loop has ended');
+
+let colors = ['orange', 'green', 'pink', 'yellow', 'black'];
+
+for (let i = 0; i < colors.length; i++){
+    console.log(i, colors[i])
+};
+
+
+// for...in - used to loop over properties of an object
+
+let chiTeams = {
+    mlb: 'White Sox',
+    nba: 'Bulls',
+    nfl: 'Bears',
+    nhl: 'Blackhawks'
+};
+
+// Syntax - for (let variableName in object){ code to execute for each property in object }
+
+for (let team in chiTeams){
+    console.log(team);
+    console.log(chiTeams[team]);
+    console.log('================');
+};
+
+let planets = ['Mercury', 'Mars', 'Earth', 'Saturn', 'Uranus', 'Jupiter'];
+
+for (let p in planets){
+    console.log(p);
+};
+
+// for...of - used to loop over the elements in an iterable (Array, String, etc)
+for (let p of planets){
+    console.log(p);
+};
+
+let someString = 'Hello World';
+
+for (let letter of someString){
+    console.log(letter);
+};
+
+
+// While Loop - loop while a condition is true
+// Syntax: while (condition){ code to execute while the condition is true }
+
+console.log("WHILE LOOP:");
+let startingNumber = 0;
+
+console.log('Before:', startingNumber);
+
+while (startingNumber < 500){
+    console.log(startingNumber);
+    startingNumber += Math.floor(Math.random() *100);
+};
+
+console.log('After:', startingNumber);
+
+
+// Do While Loop - DO the first part AT LEAST ONCE
+// If the condition is still true, continue the while loop
+
+// Syntax: do { code to execute } while { condition }
+
+console.log('Do While');
+let x = 10000;
+
+do {
+    x = Math.floor(Math.random() * 100);
+    console.log(x);
+} while (x < 50);
+
+console.log('Do While over x is', x);
+
